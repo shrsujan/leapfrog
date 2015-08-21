@@ -42,7 +42,21 @@ class AdminStudentController{
 	}
 
 	public function edit(){
-		include_once(ROOT_PATH.'views/admin/students/edit.php');	
+		if(empty($_POST)){
+			include_once(ROOT_PATH.'views/admin/students/edit.php');	
+		}
+		else{
+			$student = $this->_map_posted_data();
+			$student->set_id($_POST['id']);
+			$result_edit = $this->student_repository->update($student);
+			if($result_edit>0){
+				header('location:index.php?page=astudent&update=true');
+			}
+			else{
+				header('location:index.php?page=astudent&update=false');
+			}
+
+		}
 	}
 
 	public function delete(){

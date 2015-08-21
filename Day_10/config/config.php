@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 define("BASE_URL","http://localhost/leapfrog/Day_10/");
 define("ROOT_PATH",$_SERVER['DOCUMENT_ROOT']."/leapfrog/Day_10/");
 

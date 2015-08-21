@@ -14,11 +14,11 @@
 	    <!-- Collect the nav links, forms, and other content for toggling -->
 	    	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	      		<ul class="nav navbar-nav">
-	        		<li><a href="student.php">Student <span class="sr-only">(current)</span></a></li>
-	        		<li><a href="teacher.php">Teacher</a></li>
-			    	<li><a href="subject.php">Subject</a></li>
-	        		<li><a href="department.php">Department</a></li>      
-	        		<li><a href="program.php">Program</a></li>      
+	        		<li><a href="index.php?page=astudent">Student <span class="sr-only">(current)</span></a></li>
+	        		<li><a href="index.php?page=ateacher">Teacher</a></li>
+			    	<li><a href="index.php?page=asubject">Subject</a></li>
+	        		<li><a href="index.php?page=adepartment">Department</a></li>      
+	        		<li><a href="index.php?page=aprogram">Program</a></li>      
 	        	</ul>
 	            <div class="pull-right"><a href="#" class="btn btn-sm btn-primary" role="button">Sign Up</a> <a href="#" class="btn btn-sm btn-success" role="button">Log In</a>
 	      		</div>

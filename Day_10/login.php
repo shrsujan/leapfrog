@@ -1,4 +1,9 @@
 <?php require_once('config/config.php');?>
+<?php
+	if(isset($_SESSION['logged_in'])){
+		header('location:index.php');
+	}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,6 +16,14 @@
 <body>
 
 <div class="container">
+<?php
+	if(isset($_GET['invalid']) && $_GET['invalid']=="true"){
+		echo "<h4>Invalid Username or Password</h4>";
+	}
+	if(isset($_GET['logout']) && $_GET['logout']=="true"){
+		echo "<h4>Logout Successful</h4>";
+	}
+?>
 	<form method="post" action="check.php">
 	<h1>Login</h1>
 	<br/>
